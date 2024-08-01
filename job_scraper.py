@@ -6,11 +6,11 @@ now = str(datetime.now())
 filename = "jobs_" + now + ".csv"
 
 jobs = scrape_jobs(
-    site_name=["indeed", "linkedin"],
+    site_name=["indeed"],
     #search_term="software engineer",
-    job_type="fulltime",
+    #job_type="fulltime",
     location="New York, NY",
-    distance=20,
+    distance=50,
     results_wanted=1000,
     hours_old=2, # (only Linkedin/Indeed is hour specific, others round up to days old)
     country_indeed='USA',  # only needed for indeed / glassdoor
